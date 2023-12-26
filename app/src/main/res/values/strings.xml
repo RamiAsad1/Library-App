@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Library App</string>
+    <string name="usernameHint">Username</string>
+    <string name="emailHint">Email</string>
+    <string name="passwordHint">Password</string>
+    <string name="signInPageWelcomeText">Welcome! please sign-In.</string>
+    <string name="signUpPageWelcomeText">Please fill out these fields to create a new account!</string>
+    <string name="checkboxText">Remember me</string>
+    <string name="signInButtonText">Sign In</string>
+    <string name="registerButtonText">Sign Up</string>
+    <string name="createButtonText">Create account</string>
+    <string name="registerMessageText">If you don\'t have an account, press here to register a new one!</string>
+    <string name="ErrorMsgText">Please fill out all fields!</string>
+    <string name="homePageButton1Text">Browse books</string>
+    <string name="homePageButton2Text">Find libraries</string>
+    <string name="browseBooksWelcomeText">Select your requirements!</string>
+    <string name="languageText">Language</string>
+    <string name="authorText">Author</string>
+    <string name="browseButton">Browse All Books</string>
+    <string name="searchButton">Search Book</string>
+</resources>

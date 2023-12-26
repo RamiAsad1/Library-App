@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".HomePageActivity">
+
+    <TextView
+        android:id="@+id/txtHomePageWelcome"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnBrowseBooks"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:drawableLeft="@drawable/books_icon"
+        android:gravity="start|center_vertical"
+        android:onClick="btnBrowseBooksOnClick"
+        android:paddingStart="15dp"
+        android:text="@string/homePageButton1Text"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/btnFindLibrary"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:drawableLeft="@drawable/map_icon"
+        android:gravity="start|center_vertical"
+        android:onClick="btnFindLibraries"
+        android:paddingStart="15dp"
+        android:text="@string/homePageButton2Text"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:ignore="RtlCompat" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

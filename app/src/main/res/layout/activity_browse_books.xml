@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".BrowseBooksActivity">
+
+    <TextView
+        android:id="@+id/txtBrowseBooksWelcome"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/browseBooksWelcomeText" />
+
+    <TextView
+        android:id="@+id/txtLang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spnAuthor"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/languageText"
+        android:textAlignment="center"
+        android:textSize="14dp" />
+
+    <Spinner
+        android:id="@+id/spnLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLang"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/txtAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtBrowseBooksWelcome"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/authorText"
+        android:textAlignment="center"
+        android:textSize="14dp" />
+
+    <Spinner
+        android:id="@+id/spnAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAuthor"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/btnBrowse"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spnLanguage"
+        android:layout_marginTop="15dp"
+        android:onClick="btnBrowseOnClick"
+        android:text="@string/browseButton" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spnLanguage"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/btnBrowse"
+        android:onClick="btnSearchOnClick"
+        android:text="@string/searchButton" />
+
+    <ListView
+        android:id="@+id/lstBooks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnBrowse"
+        android:visibility="gone"
+        android:layout_marginTop="15dp" />
+
+
+</RelativeLayout>
