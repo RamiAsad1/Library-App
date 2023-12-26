@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         String password = edtSignInPass.getText().toString();
 
         if (authenticateUser(username, password)) {
-            txtErrorMSG.setVisibility(View.GONE);//maybe remove it later
+            txtErrorMSG.setVisibility(View.GONE);
             Intent intent2 = new Intent(this,HomePageActivity.class);
             startActivity(intent2);
         } else {
