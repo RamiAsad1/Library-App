@@ -27,6 +27,7 @@ import org.osmdroid.views.overlay.Marker;
 // https://nominatim.org/release-docs/develop/api/Overview/
 // The api uses the Nominatim search engine, which can be found here:
 // https://nominatim.openstreetmap.org/ui/search.html?
+// Note: the map may take some seconds to load.
 
 public class LibraryMapActivity extends AppCompatActivity {
     private RequestQueue queue;

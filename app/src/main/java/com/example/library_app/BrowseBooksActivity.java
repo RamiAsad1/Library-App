@@ -50,17 +50,6 @@ public class BrowseBooksActivity extends AppCompatActivity {
         lstBooks = findViewById(R.id.lstBooks);
         spnLanguage = findViewById(R.id.spnLanguage);
         spnAuthor = findViewById(R.id.spnAuthor);
-
-        List<String> defaultValueAuthor = new ArrayList<>();
-        defaultValueAuthor.add("Any Author");
-        List<String> defaultValueLanguage = new ArrayList<>();
-        defaultValueLanguage.add("Any Language");
-
-        ArrayAdapter<String> authorsAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, defaultValueAuthor);
-        ArrayAdapter<String> languagesAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, defaultValueLanguage);
-
-        spnAuthor.setAdapter(authorsAdapter);
-        spnLanguage.setAdapter(languagesAdapter);
     }
 
     private void getAllBooks() {
